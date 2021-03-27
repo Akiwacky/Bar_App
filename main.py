@@ -11,11 +11,6 @@ def home():
     return render_template('home.html')
 
 
-@app.route('/story')
-def about_me():
-    return render_template('story.html')
-
-
 @app.route('/menu', methods=['GET'])
 def menu_item():
     fetch_items = FetchItems()
