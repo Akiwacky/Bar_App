@@ -1,4 +1,4 @@
-from flask import Flask, render_template
+from flask import Flask, render_template, url_for
 from flask_bootstrap import Bootstrap
 
 app = Flask(__name__)
@@ -12,12 +12,12 @@ def home():
 
 @app.route('/story')
 def about_me():
-    pass
+    return render_template('story.html')
 
 
 @app.route('/menu', methods=['GET'])
 def menu_item():
-    pass
+    return render_template('menu.html')
 
 
 if __name__ == '__main__':

@@ -1,42 +1,97 @@
+/*
+ * Globals
+ */
 
-h1 {
-    display: block;
-    margin-block-start: 0.67em;
-    margin-block-end: 0.67em;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;
-}
 
-h1 {
-    font-size: calc(1.375rem + 1.5vw);
-}
-
-h1 {
-    margin-top: 0;
-    margin-bottom: .5rem;
-    font-width: 500;
-    line-height: 1.2;
-    text-align: center!important;
-}
-
-.btn{
-    text-align: center!important;
+/* Custom default button */
+.btn-secondary,
+.btn-secondary:hover,
+.btn-secondary:focus {
+  color: #333;
+  text-shadow: none; /* Prevent inheritance from `body` */
 }
 
 
+/*
+ * Base structure
+ */
 
-/*class*/
-.caption-c {
-    top: 50%;
-    transform: translateY(-50%);
+body {
+  background-color: #2a9d8f;
 }
 
-.container-x{
-    background-color: #FF7E1B;
-    display: block;
+.cover-container {
+  /*max-width: 42em;*/
 }
 
-/*ids*/
+
+/*
+ * Header
+ */
+
+.nav-masthead .nav-link {
+  padding: .25rem 0;
+  font-weight: 700;
+  color: white;
+  background-color: transparent;
+  border-bottom: .25rem solid transparent;
+}
+
+.nav-masthead .nav-link:hover,
+.nav-masthead .nav-link:focus {
+  border-bottom-color: rgba(255, 255, 255, .25);
+}
+
+.nav-masthead .nav-link + .nav-link {
+  margin-left: 1rem;
+}
+
+.carousel-item {
+  margin-top: -10%;
+}
+
+.carousel-item{
+  position: relative;
+  -webkit-transform-style: preserve-3d;
+  -moz-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+}
+.carousel-caption {
+  position: absolute;
+  font-weight: bold;
+  font-size: 40px;
+  top: 62%;
+  transform: translateY(-50%);
+  bottom: initial;
+}
+
+.section-container{
+  margin: 3rem;
+}
+
+
+/********************************** ID ****************************************************/
+
 #myCarousel {
-    clip-path: polygon(0px 0px, 100% 0px, 100% 93.1492%, 0px 100%);
+    clip-path: polygon(0px 0px, 100% 0px, 100% 90%, 0px 100%);
 }
+
+
+
+
+
+    /*<style>*/
+    /*  .bd-placeholder-img {*/
+    /*    font-size: 1.125rem;*/
+    /*    text-anchor: middle;*/
+    /*    -webkit-user-select: none;*/
+    /*    -moz-user-select: none;*/
+    /*    user-select: none;*/
+    /*  }*/
+
+    /*  @media (min-width: 768px) {*/
+    /*    .bd-placeholder-img-lg {*/
+    /*      font-size: 3.5rem;*/
+    /*    }*/
+    /*  }*/
+    /*</style>*/

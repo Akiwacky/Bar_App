@@ -1,65 +1,22 @@
-<!doctype html>
-<html lang="en">
-  <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+{% include "header.html" %}
 
-    <link rel="stylesheet" href="static/css/style.css">
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-
-    <title>London's Tavern</title>
-  </head>
-  <body>
-
-<!--Header-->
-<header>
-  <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
-    <div class="container-fluid">
-      <a class="navbar-brand" href="#">London's Tavern</a>
-      <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="navbar-collapse collapse justify-content-end" id="navbarCollapse" style="">
-        <ul class="navbar-nav me-auto mb-2 mb-md-0">
-          <li class="nav-item">
-            <a class="nav-link" href="#">Story</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Menu</a>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </nav>
-</header>
-
-<!--  main-->
-<div class="container-x">
-<!--Carousel-->
-<div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
+<div id="myCarousel" class="carousel slide" data-ride="carousel">
   <div class="carousel-inner">
     <div class="carousel-item active">
-      <img src="static/imgs/drink1.jpg" class="d-block w-100" alt="Cocktail">
-            <div class="carousel-caption d-none d-md-block">
-        <h5 class="caption-c">First slide label</h5>
-        <p>Some representative placeholder content for the first slide.</p>
-      </div>
+        <img src="static/imgs/drink1.jpg" class="d-block w-100" alt="Cocktail">
+        <div class="carousel-caption">
+          <p>It's  Friyay!</p>
+          <p>Head down to the Tavern, first drink is on the house!</p>
+        </div>
     </div>
   </div>
 </div>
-<!--   Bottom Section -->
-  <h1>Can't make it due to the restrictions?</h1>
-  <button type="button" class="btn btn-outline-info">CLICK HERE</button>
-</div>
 
+  <main class="section-container">
+    <h1>Can't make it due to all the restrictions?</h1>
+    <p class="lead">
+      <a href="{{ url_for('menu_item')}}" class="btn btn-lg btn-secondary fw-bold border-white bg-white">Click Here</a>
+    </p>
+  </main>
 
-<!--Javascript-->
-<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-  </body>
-</html>
-
-
+{% include "footer.html" %}
