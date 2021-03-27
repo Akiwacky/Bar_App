@@ -1,5 +1,6 @@
-from flask import Flask, render_template, url_for
+from flask import Flask, render_template
 from flask_bootstrap import Bootstrap
+from get_menu import FetchItems
 
 app = Flask(__name__)
 Bootstrap(app)
@@ -17,7 +18,9 @@ def about_me():
 
 @app.route('/menu', methods=['GET'])
 def menu_item():
-    return render_template('menu.html')
+    fetch_items = FetchItems()
+    fetch_items.get_items()
+    return render_template('menu.html', items=fetch_items.items)
 
 
 if __name__ == '__main__':

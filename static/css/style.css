@@ -1,33 +1,15 @@
-/*
- * Globals
- */
 
-
-/* Custom default button */
 .btn-secondary,
 .btn-secondary:hover,
 .btn-secondary:focus {
   color: #333;
-  text-shadow: none; /* Prevent inheritance from `body` */
+  text-shadow: none;
 }
-
-
-/*
- * Base structure
- */
 
 body {
   background-color: #2a9d8f;
 }
 
-.cover-container {
-  /*max-width: 42em;*/
-}
-
-
-/*
- * Header
- */
 
 .nav-masthead .nav-link {
   padding: .25rem 0;
@@ -69,29 +51,23 @@ body {
   margin: 3rem;
 }
 
-
-/********************************** ID ****************************************************/
-
 #myCarousel {
     clip-path: polygon(0px 0px, 100% 0px, 100% 90%, 0px 100%);
 }
 
+.container-card{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 
+.card {
+  width: 400px;
+  height: 400px;
+  margin: 2rem;
+}
 
-
-
-    /*<style>*/
-    /*  .bd-placeholder-img {*/
-    /*    font-size: 1.125rem;*/
-    /*    text-anchor: middle;*/
-    /*    -webkit-user-select: none;*/
-    /*    -moz-user-select: none;*/
-    /*    user-select: none;*/
-    /*  }*/
-
-    /*  @media (min-width: 768px) {*/
-    /*    .bd-placeholder-img-lg {*/
-    /*      font-size: 3.5rem;*/
-    /*    }*/
-    /*  }*/
-    /*</style>*/
+.img-fluid {
+  max-width: 100%;
+  height: auto;
+}

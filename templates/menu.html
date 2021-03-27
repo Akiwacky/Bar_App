@@ -1,6 +1,21 @@
 {% include "header.html" %}
 
+{% for item in items %}
 
+<div class="container-card">
+    <div class="card">
+        <div class="card-body">
+            <p class="card-text text-dark">{{item.item}}   £{{item.price}}</p>
+        </div>
+        <div class="img-container">
+        <img class="img-fluid" src="/static/imgs/{{item.image}}" alt="Card image">
+            </div>
+        <div class="card-body">
+            <p class="card-text text-dark">{{item.des}}</p>
+        </div>
+    </div>
+{% endfor %}
+</div>
 
 
 {% include "footer.html" %}
