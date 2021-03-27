@@ -1,9 +1,9 @@
 import requests
 import os
 
-SHEETY_URL = os.environ.get("SHEETY_URL")
+SHEETY_URL = os.environ["SHEETY_URL"]
 headers = {
-    "Authorization": os.environ.get("headers")
+    "Authorization": os.environ["headers"]
 }
 
 
