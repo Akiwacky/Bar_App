@@ -1,8 +1,10 @@
 import requests
 import os
 
-SHEETY_URL = os.getenv("SHEETY_URL")
-headers = os.getenv("headers")
+SHEETY_URL = os.environ.get("SHEETY_URL")
+headers = {
+    "Authorization": os.environ.get("headers")
+}
 
 
 class FetchItems:
